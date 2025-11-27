@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "knowledge-1",
+      "description": "A group of young people talking in a circle",
+      "imageUrl": "https://images.unsplash.com/photo-1598988720779-9f0d8057dd5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx5b3V0aCUyMGNvbW11bml0eXxlbnwwfHx8fDE3NjQyMTk5ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "youth community"
+    },
+    {
+      "id": "knowledge-2",
+      "description": "A friendly health professional wearing a stethoscope",
+      "imageUrl": "https://images.unsplash.com/photo-1591046637350-5a71129db340?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkb2N0b3IlMjBzbWlsaW5nfGVufDB8fHx8MTc2NDE3MTE4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor smiling"
+    },
+    {
+      "id": "knowledge-3",
+      "description": "Question marks on colorful sticky notes",
+      "imageUrl": "https://images.unsplash.com/photo-1687529699742-a7e97c518dca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWVzdGlvbnMlMjBhbnN3ZXJzfGVufDB8fHx8MTc2NDIxOTk4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "questions answers"
+    }
+  ]
 }
