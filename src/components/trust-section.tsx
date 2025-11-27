@@ -42,7 +42,7 @@ export default function TrustSection() {
   ];
 
   return (
-    <section className="py-20 md:py-24 px-6 bg-white dark:bg-[#121212]">
+    <section id="privacy" className="py-20 md:py-24 px-6 bg-white dark:bg-[#121212]">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
