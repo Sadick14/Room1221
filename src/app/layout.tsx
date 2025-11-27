@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
-import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
-import { AppSidebar } from '@/components/app-sidebar';
 import { Toaster } from '@/components/ui/toaster';
 import { ChatWidget } from '@/components/chat-widget';
 
@@ -27,13 +25,8 @@ export default function RootLayout({
         />
       </head>
       <body className={cn('font-body antialiased', 'min-h-screen bg-background')}>
-        <SidebarProvider>
-          <AppSidebar />
-          <SidebarInset>
-            {children}
-            <ChatWidget />
-          </SidebarInset>
-        </SidebarProvider>
+        <main>{children}</main>
+        <ChatWidget />
         <Toaster />
       </body>
     </html>
