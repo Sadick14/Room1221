@@ -83,9 +83,9 @@ export default function FloatingChatbot() {
       {/* Modal Overlay */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-white dark:bg-[#1E1E1E] rounded-2xl shadow-2xl max-w-sm w-full">
+          <div className="bg-white dark:bg-[#1E1E1E] rounded-2xl shadow-2xl max-w-sm w-full max-h-[90vh] flex flex-col">
             {/* Modal Header */}
-            <div className="p-6 text-center border-b border-gray-200 dark:border-gray-700">
+            <div className="p-6 text-center border-b border-gray-200 dark:border-gray-700 flex-shrink-0">
               <div className="w-16 h-16 bg-gradient-to-r from-[#6366FF] to-[#8B5CF6] text-white rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle size={32} />
               </div>
@@ -104,7 +104,7 @@ export default function FloatingChatbot() {
             </div>
 
             {/* Modal Content */}
-            <div className="p-6">
+            <div className="p-6 overflow-y-auto">
               {/* Privacy Reminder */}
               <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-4 mb-6">
                 <div className="flex items-start space-x-3">
