@@ -24,19 +24,19 @@ export default function LandingPage() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl md:text-6xl text-primary">
-              Welcome to Aura
+              Your Company Name
             </h1>
             <p className="mt-4 text-lg text-foreground/80 md:text-xl">
-              Your confidential companion for Sexual and Reproductive Health. Safe, anonymous, and always here for you.
+              Your compelling company tagline goes here.
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <Button asChild size="lg">
-                <Link href="/chat">
-                  Chat with Aura <ArrowRight className="ml-2 h-5 w-5" />
+                <Link href="#">
+                  Get Started <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="/knowledge">
+                <Link href="#">
                   Learn More
                 </Link>
               </Button>
@@ -49,9 +49,9 @@ export default function LandingPage() {
       <section className="py-12 md:py-20 lg:py-24 bg-background">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-headline">Features</h2>
+            <h2 className="text-3xl font-bold font-headline">Our Features</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mt-2">
-              Everything you need to take control of your sexual and reproductive health, all in one place.
+              Discover the powerful features that make our product unique.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -60,15 +60,12 @@ export default function LandingPage() {
                 <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit">
                     <Bot className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="mt-4">AI Chat</CardTitle>
+                <CardTitle className="mt-4">Feature One</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Get instant, confidential answers to your health questions from our AI companion.
+                  Description of the first amazing feature of your product.
                 </p>
-                <Button variant="link" asChild>
-                  <Link href="/chat">Start Chatting <ArrowRight className="ml-1 h-4 w-4" /></Link>
-                </Button>
               </CardContent>
             </Card>
 
@@ -77,15 +74,12 @@ export default function LandingPage() {
                  <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit">
                     <Search className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="mt-4">Find a Clinic</CardTitle>
+                <CardTitle className="mt-4">Feature Two</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Locate youth-friendly and verified clinics and pharmacies near you, safely and securely.
+                  Description of the second amazing feature of your product.
                 </p>
-                <Button variant="link" asChild>
-                  <Link href="/referral">Find a Clinic <ArrowRight className="ml-1 h-4 w-4" /></Link>
-                </Button>
               </CardContent>
             </Card>
 
@@ -94,15 +88,12 @@ export default function LandingPage() {
                 <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit">
                     <BookOpen className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="mt-4">Knowledge Base</CardTitle>
+                <CardTitle className="mt-4">Feature Three</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Explore stories, bust myths, and get accurate information to make healthy choices.
+                  Description of the third amazing feature of your product.
                 </p>
-                 <Button variant="link" asChild>
-                  <Link href="/knowledge">Explore Topics <ArrowRight className="ml-1 h-4 w-4" /></Link>
-                </Button>
               </CardContent>
             </Card>
           </div>
@@ -113,10 +104,10 @@ export default function LandingPage() {
       <section className="py-12 md:py-20 lg:py-24 bg-primary/5">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-semibold font-headline">You're not alone</h2>
+            <h2 className="text-2xl font-semibold font-headline">What Our Customers Say</h2>
             <blockquote className="mt-4">
-              <p className="text-lg text-foreground/80">"I was too scared to ask my parents about contraception. Aura helped me understand my options and find a clinic where I felt safe and respected. It changed everything for me."</p>
-              <footer className="mt-4 text-sm text-muted-foreground">- Amara, 19</footer>
+              <p className="text-lg text-foreground/80">"This product is a game-changer. It has transformed our workflow and saved us countless hours. Highly recommended!"</p>
+              <footer className="mt-4 text-sm text-muted-foreground">- Happy Customer</footer>
             </blockquote>
           </div>
         </div>

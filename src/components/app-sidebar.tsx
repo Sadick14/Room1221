@@ -3,11 +3,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  BookOpen,
   Home,
-  Hospital,
   LogOut,
-  MessageSquare,
   Sparkles,
 } from 'lucide-react';
 import {
@@ -25,9 +22,6 @@ import { useSidebar } from '@/components/ui/sidebar';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
-  { href: '/chat', label: 'Chat', icon: MessageSquare },
-  { href: '/referral', label: 'Find a Clinic', icon: Hospital },
-  { href: '/knowledge', label: 'Knowledge Base', icon: BookOpen },
 ];
 
 export function AppSidebar() {
@@ -50,8 +44,8 @@ export function AppSidebar() {
             </Link>
           </Button>
           <div className="flex flex-col">
-            <h2 className="text-base font-bold tracking-tight">Aura</h2>
-            <p className="text-xs text-muted-foreground">Your SRH Companion</p>
+            <h2 className="text-base font-bold tracking-tight">Your Company</h2>
+            <p className="text-xs text-muted-foreground">Website</p>
           </div>
           {isMobile && <div className="ml-auto">
             <SidebarTrigger />

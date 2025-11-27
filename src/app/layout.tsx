@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { AppSidebar } from '@/components/app-sidebar';
 import { Toaster } from '@/components/ui/toaster';
+import { ChatWidget } from '@/components/chat-widget';
 
 export const metadata: Metadata = {
   title: 'Aura - Your SRH Companion',
@@ -30,6 +31,7 @@ export default function RootLayout({
           <AppSidebar />
           <SidebarInset>
             {children}
+            <ChatWidget />
           </SidebarInset>
         </SidebarProvider>
         <Toaster />
