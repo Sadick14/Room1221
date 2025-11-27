@@ -19,6 +19,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { BotIcon } from "./icons/bot-icon";
 
 export default function FloatingChatbot() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -57,9 +58,9 @@ export default function FloatingChatbot() {
           className="group w-16 h-16 bg-gradient-to-r from-[#6366FF] to-[#8B5CF6] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#6366FF]/30 active:scale-95 flex items-center justify-center"
         >
           <div className="relative">
-            <MessageCircle
-              size={24}
-              className="group-hover:scale-110 transition-transform duration-200"
+            <BotIcon
+              
+              className="w-8 h-8 group-hover:scale-110 transition-transform duration-200"
             />
             <div className="absolute inset-0 rounded-full bg-white/20 animate-ping"></div>
           </div>
@@ -76,7 +77,7 @@ export default function FloatingChatbot() {
             {/* Modal Header */}
             <div className="p-6 text-center border-b border-gray-200 dark:border-gray-700 flex-shrink-0">
               <div className="w-16 h-16 bg-gradient-to-r from-[#6366FF] to-[#8B5CF6] text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageCircle size={32} />
+                <BotIcon className="w-8 h-8" />
               </div>
               <h2 className="font-inter font-bold text-xl text-[#111111] dark:text-white">
                 Hello! I am your safe room for SRH support.
@@ -120,7 +121,7 @@ export default function FloatingChatbot() {
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-lg px-6 py-4 rounded-xl hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60 shadow-lg"
                   >
-                    <MessageCircle size={20} />
+                    <BotIcon className="w-5 h-5" />
                     <span>Chat Now</span>
                   </a>
                   <button

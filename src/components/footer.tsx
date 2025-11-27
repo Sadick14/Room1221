@@ -16,6 +16,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { BotIcon } from "./icons/bot-icon";
 
 export default function Footer() {
   const [isSmsAlertOpen, setIsSmsAlertOpen] = useState(false);
@@ -46,7 +47,7 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6]">
                   <div className="w-full h-full flex items-center justify-center rounded-lg">
-                    <MessageCircle size={20} className="text-white" />
+                    <BotIcon className="w-6 h-6 text-white" />
                   </div>
                 </div>
                 <div>

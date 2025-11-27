@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { MessageCircle, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { BotIcon } from "@/components/icons/bot-icon";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#" className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6] flex items-center justify-center">
-            <MessageCircle size={20} className="text-white" />
+            <BotIcon className="text-white w-6 h-6" />
           </div>
           <span className="font-inter font-bold text-xl text-[#111111] dark:text-white">
             Room 1221
