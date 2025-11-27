@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { BotIcon } from "@/components/icons/bot-icon";
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,8 +19,14 @@ export default function Header() {
       <div className="max-w-[1240px] mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6] flex items-center justify-center">
-            <BotIcon className="text-white w-6 h-6" />
+          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6] flex items-center justify-center overflow-hidden">
+            <Image 
+              src="/5855218229494615035.jpg"
+              alt="Room 1221 Logo"
+              width={40}
+              height={40}
+              className="object-cover"
+            />
           </div>
           <span className="font-inter font-bold text-xl text-[#111111] dark:text-white">
             Room 1221

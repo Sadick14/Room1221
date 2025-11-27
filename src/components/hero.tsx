@@ -1,7 +1,8 @@
 "use client"
 import { Shield } from "lucide-react";
-import { BotIcon } from "./icons/bot-icon";
 import Image from "next/image";
+import { BotIcon } from "./icons/bot-icon";
+
 
 export default function Hero() {
 
@@ -34,9 +35,15 @@ export default function Hero() {
           {/* Room 1221 Logo/Brand */}
           <div className="flex justify-center mb-6">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6] flex items-center justify-center">
-                <BotIcon className="text-white w-7 h-7" />
-              </div>
+            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6] flex items-center justify-center overflow-hidden">
+            <Image 
+              src="/5855218229494615035.jpg"
+              alt="Room 1221 Logo"
+              width={40}
+              height={40}
+              className="object-cover"
+            />
+          </div>
               <div className="text-left">
                 <h1 className="font-inter font-bold text-2xl text-[#111111] dark:text-white">
                   Room 1221

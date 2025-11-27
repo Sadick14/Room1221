@@ -7,6 +7,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -16,7 +17,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import { BotIcon } from "./icons/bot-icon";
 import { TelegramIcon } from "./icons/telegram-icon";
 import { WhatsAppIcon } from "./icons/whatsapp-icon";
 
@@ -47,10 +47,14 @@ export default function Footer() {
             <div className="space-y-6 lg:col-span-2">
               {/* Logo and Brand Name */}
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6]">
-                  <div className="w-full h-full flex items-center justify-center rounded-lg">
-                    <BotIcon className="w-6 h-6 text-white" />
-                  </div>
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6] flex items-center justify-center overflow-hidden">
+                  <Image 
+                    src="/5855218229494615035.jpg"
+                    alt="Room 1221 Logo"
+                    width={40}
+                    height={40}
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <span className="font-inter font-bold text-white text-xl">
