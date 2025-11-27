@@ -1,5 +1,5 @@
 "use client"
-import { Shield, Heart, MessageCircle } from "lucide-react";
+import { Shield, MessageCircle } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="flex justify-center mb-6">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6] flex items-center justify-center">
-                <Heart size={24} className="text-white" />
+                <MessageCircle size={24} className="text-white" />
               </div>
               <div className="text-left">
                 <h1 className="font-inter font-bold text-2xl text-[#111111] dark:text-white">
@@ -83,7 +83,7 @@ export default function Hero() {
             <div className="flex items-center px-6 py-4 bg-[#6366FF] dark:bg-[#8B5CF6] text-white">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                  <Heart size={20} className="text-white" />
+                  <MessageCircle size={20} className="text-white" />
                 </div>
                 <div>
                   <h3 className="font-inter font-semibold text-lg">
@@ -105,7 +105,7 @@ export default function Hero() {
               {/* Bot Welcome Message */}
               <div className="flex items-start space-x-3">
                 <div className="w-8 h-8 bg-[#6366FF] dark:bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Heart size={16} className="text-white" />
+                  <MessageCircle size={16} className="text-white" />
                 </div>
                 <div className="bg-white dark:bg-[#2A2A2A] rounded-xl px-4 py-3 max-w-[80%] shadow-sm">
                   <p className="font-inter text-[#111111] dark:text-white">
@@ -134,7 +134,7 @@ export default function Hero() {
               {/* Bot Response */}
               <div className="flex items-start space-x-3">
                 <div className="w-8 h-8 bg-[#6366FF] dark:bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Heart size={16} className="text-white" />
+                  <MessageCircle size={16} className="text-white" />
                 </div>
                 <div className="bg-white dark:bg-[#2A2A2A] rounded-xl px-4 py-3 max-w-[80%] shadow-sm">
                   <p className="font-inter text-[#111111] dark:text-white">
@@ -149,7 +149,7 @@ export default function Hero() {
               {/* Typing indicator */}
               <div className="flex items-start space-x-3">
                 <div className="w-8 h-8 bg-[#6366FF] dark:bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Heart size={16} className="text-white" />
+                  <MessageCircle size={16} className="text-white" />
                 </div>
                 <div className="bg-white dark:bg-[#2A2A2A] rounded-xl px-4 py-3 shadow-sm">
                   <div className="flex space-x-1">

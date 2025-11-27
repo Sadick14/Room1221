@@ -1,8 +1,7 @@
 "use client"
 import {
-  Heart,
-  Shield,
   MessageCircle,
+  Shield,
   Phone,
   ExternalLink,
 } from "lucide-react";
@@ -34,7 +33,7 @@ export default function Footer() {
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366FF] to-[#8B5CF6]">
                 <div className="w-full h-full flex items-center justify-center rounded-lg">
-                  <Heart size={20} className="text-white" />
+                  <MessageCircle size={20} className="text-white" />
                 </div>
               </div>
               <div>

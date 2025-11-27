@@ -2,7 +2,6 @@
 import {
   Smartphone,
   MessageCircle,
-  Heart,
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
@@ -35,7 +34,7 @@ export default function HowItWorks() {
     },
     {
       number: "03",
-      icon: Heart,
+      icon: MessageCircle,
       title: "Get Verified Information",
       description:
         "Receive medically accurate SRH information, education, and referrals to local healthcare providers.",

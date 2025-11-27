@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {
-  Heart,
   MessageCircle,
   Phone,
   X,
@@ -61,7 +60,7 @@ export default function FloatingChatbot() {
 
               <div className="flex items-start space-x-3">
                 <div className="w-8 h-8 bg-[#6366FF]/10 dark:bg-[#8B5CF6]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Heart
+                  <MessageCircle
                     size={16}
                     className="text-[#6366FF] dark:text-[#8B5CF6]"
                   />
@@ -97,7 +96,7 @@ export default function FloatingChatbot() {
           className="group w-16 h-16 bg-gradient-to-r from-[#6366FF] to-[#8B5CF6] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#6366FF]/30 active:scale-95 flex items-center justify-center"
         >
           <div className="relative">
-            <Heart
+            <MessageCircle
               size={24}
               className="group-hover:scale-110 transition-transform duration-200"
             />
@@ -122,7 +121,7 @@ export default function FloatingChatbot() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                    <Heart size={24} className="text-white" />
+                    <MessageCircle size={24} className="text-white" />
                   </div>
                   <div>
                     <h2 className="font-inter font-bold text-xl">
