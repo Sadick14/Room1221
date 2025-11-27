@@ -104,17 +104,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero Visual */}
-        <div className="mt-16 relative flex justify-center">
-            <Image 
-                src="https://picsum.photos/seed/robot/1024/768" 
-                alt="SRH Chatbot Mascot" 
-                width={800} 
-                height={600}
-                className="rounded-xl"
-                data-ai-hint="robot mascot"
-            />
-        </div>
       </div>
     </section>
   );
