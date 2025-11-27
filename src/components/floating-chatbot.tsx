@@ -11,11 +11,21 @@ import {
   ChevronRight,
 } from "lucide-react";
 import WebChat from "./web-chat";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 export default function FloatingChatbot() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [showMoreOptions, setShowMoreOptions] = useState(false);
+  const [isSmsAlertOpen, setIsSmsAlertOpen] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -37,8 +47,7 @@ export default function FloatingChatbot() {
   };
 
   const handleSMSClick = () => {
-    window.location.href = "sms:+1234567890";
-    handleCloseModal();
+    setIsSmsAlertOpen(true);
   };
 
   const handleWebChatClick = () => {
@@ -192,10 +201,7 @@ export default function FloatingChatbot() {
                         </h4>
                       </div>
                     </div>
-                    <ExternalLink
-                      size={16}
-                      className="text-[#6B7280] dark:text-white/70 group-hover:text-[#6366FF] transition-colors"
-                    />
+                     <span className="text-xs font-semibold bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-2 py-1 rounded-full">Coming Soon</span>
                   </button>
                    <button
                     onClick={() => setShowMoreOptions(false)}
@@ -209,6 +215,24 @@ export default function FloatingChatbot() {
           </div>
         </div>
       )}
+
+      <AlertDialog open={isSmsAlertOpen} onOpenChange={setIsSmsAlertOpen}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>SMS Service Coming Soon!</AlertDialogTitle>
+            <AlertDialogDescription>
+              We're working hard to bring you SMS support. For now, you can reach us on our short code:
+              <br />
+              <strong className="text-lg text-foreground">1221</strong>
+              <br />
+              Please check back later for full SMS chat functionality.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogAction onClick={() => setIsSmsAlertOpen(false)}>Got it</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </>
   );
 }
