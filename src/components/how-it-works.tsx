@@ -5,10 +5,8 @@ import {
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
-import { useChat } from "@/context/ChatProvider";
 
 export default function HowItWorks() {
-  const { setIsChatOpen } = useChat();
   const steps = [
     {
       number: "01",
@@ -203,13 +201,15 @@ export default function HowItWorks() {
               confidential, judgment-free sexual and reproductive health
               support.
             </p>
-            <button
-              onClick={() => setIsChatOpen(true)}
+            <a
+              href="https://blurb-civil-63223200.figma.site/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-white text-[#6366FF] font-inter font-semibold text-lg px-8 py-4 rounded-[20px] hover:bg-gray-100 active:bg-gray-200 active:scale-95 transition-all duration-200 shadow-lg"
             >
               <MessageCircle size={20} />
               <span>Start Your Conversation</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

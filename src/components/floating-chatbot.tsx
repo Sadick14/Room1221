@@ -10,7 +10,6 @@ import {
   Shield,
   ChevronRight,
 } from "lucide-react";
-import WebChat from "./web-chat";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -20,11 +19,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import { useChat } from "@/context/ChatProvider";
 
 export default function FloatingChatbot() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const { isChatOpen, setIsChatOpen } = useChat();
   const [showMoreOptions, setShowMoreOptions] = useState(false);
   const [isSmsAlertOpen, setIsSmsAlertOpen] = useState(false);
 
@@ -50,15 +47,6 @@ export default function FloatingChatbot() {
   const handleSMSClick = () => {
     setIsSmsAlertOpen(true);
   };
-
-  const handleWebChatClick = () => {
-    setIsModalOpen(false);
-    setIsChatOpen(true);
-  };
-
-  if (isChatOpen) {
-    return <WebChat isOpen={isChatOpen} setIsOpen={setIsChatOpen} />;
-  }
 
   return (
     <>
@@ -126,13 +114,15 @@ export default function FloatingChatbot() {
 
               {!showMoreOptions ? (
                 <div className="space-y-4 text-center">
-                  <button
-                    onClick={handleWebChatClick}
+                  <a
+                    href="https://blurb-civil-63223200.figma.site/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-lg px-6 py-4 rounded-xl hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60 shadow-lg"
                   >
                     <MessageCircle size={20} />
                     <span>Chat Now</span>
-                  </button>
+                  </a>
                   <button
                     onClick={() => setShowMoreOptions(true)}
                     className="font-inter font-medium text-sm text-[#6366FF] dark:text-[#8B5CF6] hover:underline"
