@@ -1,5 +1,5 @@
 "use client"
-import { Clock, Shield, Globe, MapPin, BookOpen, Users } from "lucide-react";
+import { Clock, Shield, Globe, MapPin, BookOpen, Users, Phone, MessageCircle } from "lucide-react";
 import { TelegramIcon } from "./icons/telegram-icon";
 import { WhatsAppIcon } from "./icons/whatsapp-icon";
 
@@ -134,7 +134,7 @@ export default function Features() {
 
           <div className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center hover:border-[#6366FF] hover:shadow-lg transition-all duration-300">
             <div className="w-12 h-12 bg-[#6366FF]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <div className="w-6 h-6 bg-[#6366FF] rounded"></div>
+              <Phone size={24} className="text-[#6366FF]" />
             </div>
             <h4 className="font-inter font-semibold text-lg text-[#111111] dark:text-white mb-2">
               SMS
@@ -146,7 +146,7 @@ export default function Features() {
 
           <div className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center hover:border-[#8B5CF6] hover:shadow-lg transition-all duration-300">
             <div className="w-12 h-12 bg-[#8B5CF6]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <div className="w-6 h-6 bg-[#8B5CF6] rounded"></div>
+              <MessageCircle size={24} className="text-[#8B5CF6]" />
             </div>
             <h4 className="font-inter font-semibold text-lg text-[#111111] dark:text-white mb-2">
               Web Chat
