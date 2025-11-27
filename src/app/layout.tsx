@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import FloatingChatbot from '@/components/floating-chatbot';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
+import { ChatProvider } from '@/context/ChatProvider';
 
 export const metadata: Metadata = {
   title: 'Room 1221 - Your Safe Space for SRH',
@@ -37,11 +38,13 @@ export default function RootLayout({
           'min-h-screen bg-white dark:bg-[#121212]'
         )}
       >
-        <Header />
-        <main>{children}</main>
-        <FloatingChatbot />
-        <Footer />
-        <Toaster />
+        <ChatProvider>
+          <Header />
+          <main>{children}</main>
+          <FloatingChatbot />
+          <Footer />
+          <Toaster />
+        </ChatProvider>
       </body>
     </html>
   );

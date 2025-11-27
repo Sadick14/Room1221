@@ -20,10 +20,11 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { useChat } from "@/context/ChatProvider";
 
 export default function FloatingChatbot() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isChatOpen, setIsChatOpen] = useState(false);
+  const { isChatOpen, setIsChatOpen } = useChat();
   const [showMoreOptions, setShowMoreOptions] = useState(false);
   const [isSmsAlertOpen, setIsSmsAlertOpen] = useState(false);
 

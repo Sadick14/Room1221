@@ -1,9 +1,12 @@
 "use client"
 import { Shield, MessageCircle } from "lucide-react";
+import { useChat } from "@/context/ChatProvider";
 
 export default function Hero() {
+  const { setIsChatOpen } = useChat();
+
   return (
-    <section className="w-full bg-white dark:bg-[#121212] py-16 md:py-20 lg:py-24">
+    <section id="home" className="w-full bg-white dark:bg-[#121212] py-16 md:py-20 lg:py-24">
       <div className="max-w-[1240px] mx-auto px-6 md:px-8 lg:px-12">
         {/* Hero Content - Stacked and Centered */}
         <div className="text-center space-y-8">
@@ -42,14 +45,17 @@ export default function Hero() {
 
           {/* Primary CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <button className="inline-flex items-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-lg px-8 py-4 rounded-[20px] hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:bg-[#4F46E5] dark:active:bg-[#6D28D9] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60 min-h-[56px] shadow-lg">
+            <button
+              onClick={() => setIsChatOpen(true)}
+              className="inline-flex items-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-lg px-8 py-4 rounded-[20px] hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:bg-[#4F46E5] dark:active:bg-[#6D28D9] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60 min-h-[56px] shadow-lg"
+            >
               <MessageCircle size={20} />
               <span>Get Started</span>
             </button>
-            <button className="inline-flex items-center space-x-2 bg-white dark:bg-[#1E1E1E] text-[#6366FF] dark:text-[#8B5CF6] font-inter font-semibold text-lg px-8 py-4 rounded-[20px] border-2 border-[#6366FF] dark:border-[#8B5CF6] hover:bg-[#6366FF] dark:hover:bg-[#8B5CF6] hover:text-white active:bg-[#4F46E5] dark:active:bg-[#6D28D9] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60 min-h-[56px]">
+            <a href="#privacy" className="inline-flex items-center space-x-2 bg-white dark:bg-[#1E1E1E] text-[#6366FF] dark:text-[#8B5CF6] font-inter font-semibold text-lg px-8 py-4 rounded-[20px] border-2 border-[#6366FF] dark:border-[#8B5CF6] hover:bg-[#6366FF] dark:hover:bg-[#8B5CF6] hover:text-white active:bg-[#4F46E5] dark:active:bg-[#6D28D9] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60 min-h-[56px]">
               <Shield size={20} />
               <span>Learn About Privacy</span>
-            </button>
+            </a>
           </div>
 
           {/* Trust Indicators */}

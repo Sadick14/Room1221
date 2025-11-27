@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { MessageCircle, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useChat } from "@/context/ChatProvider";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { setIsChatOpen } = useChat();
 
   const navLinks = [
     { href: "#", text: "Home" },
@@ -42,7 +44,10 @@ export default function Header() {
 
         {/* CTA Button & Mobile Menu Toggle */}
         <div className="flex items-center space-x-4">
-          <button className="hidden sm:inline-flex items-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60">
+          <button
+            onClick={() => setIsChatOpen(true)}
+            className="hidden sm:inline-flex items-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60"
+          >
             <span>Chat Now</span>
           </button>
           <div className="md:hidden">
@@ -70,7 +75,13 @@ export default function Header() {
                 {link.text}
               </a>
             ))}
-             <button className="w-full mt-4 inline-flex items-center justify-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-sm px-5 py-3 rounded-lg hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60">
+            <button
+              onClick={() => {
+                setIsChatOpen(true);
+                setIsMenuOpen(false);
+              }}
+              className="w-full mt-4 inline-flex items-center justify-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-sm px-5 py-3 rounded-lg hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60"
+            >
               <span>Chat Now</span>
             </button>
           </nav>
