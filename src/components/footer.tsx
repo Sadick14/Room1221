@@ -1,3 +1,4 @@
+
 "use client"
 import {
   MessageCircle,
@@ -14,7 +15,7 @@ export default function Footer() {
 
   const handleTelegramClick = () => {
     // Replace with actual Telegram username when available
-    window.open("https://t.me/room1221bot", "_blank");
+    window.open("https://t.me/Room1221Bot", "_blank");
   };
 
   const handleSMSClick = () => {
