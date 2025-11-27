@@ -37,7 +37,7 @@ export default function FloatingChatbot() {
   };
 
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/1234567890", "_blank");
+    window.open("https://api.whatsapp.com/send?phone=15817019840&text=RM82FB", "_blank");
     handleCloseModal();
   };
 

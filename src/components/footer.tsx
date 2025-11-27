@@ -22,7 +22,7 @@ export default function Footer() {
 
   const handleWhatsAppClick = () => {
     // Replace with actual WhatsApp number when available
-    window.open("https://wa.me/1234567890", "_blank");
+    window.open("https://api.whatsapp.com/send?phone=15817019840&text=RM82FB", "_blank");
   };
 
   const handleTelegramClick = () => {
