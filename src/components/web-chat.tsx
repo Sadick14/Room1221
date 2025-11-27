@@ -33,7 +33,7 @@ export default function WebChat({ isOpen, setIsOpen }: WebChatProps) {
     {
       id: "1",
       sender: "bot",
-      text: "Welcome to Room 1221! I'm here to provide confidential, judgment-free sexual and reproductive health information. How can I help you today?",
+      text: "Hello! I am your safe room for SRH support. I'm here to provide confidential, judgment-free sexual and reproductive health information. How can I help you today?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -225,4 +225,3 @@ export default function WebChat({ isOpen, setIsOpen }: WebChatProps) {
     </AnimatePresence>
   );
 }
-

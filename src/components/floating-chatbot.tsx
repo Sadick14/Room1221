@@ -81,10 +81,10 @@ export default function FloatingChatbot() {
                 <MessageCircle size={32} />
               </div>
               <h2 className="font-inter font-bold text-xl text-[#111111] dark:text-white">
-                Welcome to Room 1221
+                Hello! I am your safe room for SRH support.
               </h2>
               <p className="font-inter text-sm text-[#6B7280] dark:text-white/70 mt-1">
-                Your safe space for SRH support.
+                Got questions? I've got you covered.
               </p>
               <button
                 onClick={handleCloseModal}
