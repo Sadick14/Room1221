@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   BookOpen,
+  Home,
   Hospital,
   LogOut,
   MessageSquare,
@@ -23,7 +24,8 @@ import { cn } from '@/lib/utils';
 import { useSidebar } from '@/components/ui/sidebar';
 
 const navItems = [
-  { href: '/', label: 'Chat', icon: MessageSquare },
+  { href: '/', label: 'Home', icon: Home },
+  { href: '/chat', label: 'Chat', icon: MessageSquare },
   { href: '/referral', label: 'Find a Clinic', icon: Hospital },
   { href: '/knowledge', label: 'Knowledge Base', icon: BookOpen },
 ];
