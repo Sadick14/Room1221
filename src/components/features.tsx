@@ -1,5 +1,7 @@
 "use client"
 import { Clock, Shield, Globe, MapPin, BookOpen, Users } from "lucide-react";
+import { TelegramIcon } from "./icons/telegram-icon";
+import { WhatsAppIcon } from "./icons/whatsapp-icon";
 
 export default function Features() {
   const features = [
@@ -108,7 +110,7 @@ export default function Features() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center hover:border-[#25D366] hover:shadow-lg transition-all duration-300">
             <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <div className="w-6 h-6 bg-[#25D366] rounded"></div>
+              <WhatsAppIcon className="w-6 h-6 text-[#25D366]" />
             </div>
             <h4 className="font-inter font-semibold text-lg text-[#111111] dark:text-white mb-2">
               WhatsApp
@@ -120,7 +122,7 @@ export default function Features() {
 
           <div className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center hover:border-[#0088cc] hover:shadow-lg transition-all duration-300">
             <div className="w-12 h-12 bg-[#0088cc]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <div className="w-6 h-6 bg-[#0088cc] rounded"></div>
+              <TelegramIcon className="w-6 h-6 text-[#0088cc]" />
             </div>
             <h4 className="font-inter font-semibold text-lg text-[#111111] dark:text-white mb-2">
               Telegram

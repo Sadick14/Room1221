@@ -17,6 +17,8 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { BotIcon } from "./icons/bot-icon";
+import { TelegramIcon } from "./icons/telegram-icon";
+import { WhatsAppIcon } from "./icons/whatsapp-icon";
 
 export default function Footer() {
   const [isSmsAlertOpen, setIsSmsAlertOpen] = useState(false);
@@ -143,9 +145,7 @@ export default function Footer() {
                 onClick={handleWhatsAppClick}
                 className="group w-full sm:w-auto flex items-center justify-center space-x-3 bg-[#25D366] hover:bg-[#1ea952] text-white font-inter font-semibold px-6 py-4 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-opacity-60 active:scale-95 shadow-lg"
               >
-                <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
-                  <MessageCircle size={16} className="text-[#25D366]" />
-                </div>
+                <WhatsAppIcon className="w-5 h-5" />
                 <span>Chat on WhatsApp</span>
                 <ExternalLink
                   size={16}
@@ -158,9 +158,7 @@ export default function Footer() {
                 onClick={handleTelegramClick}
                 className="group w-full sm:w-auto flex items-center justify-center space-x-3 bg-[#0088cc] hover:bg-[#006ba3] text-white font-inter font-semibold px-6 py-4 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#0088cc] focus:ring-opacity-60 active:scale-95 shadow-lg"
               >
-                <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
-                  <MessageCircle size={16} className="text-[#0088cc]" />
-                </div>
+                <TelegramIcon className="w-5 h-5" />
                 <span>Chat on Telegram</span>
                 <ExternalLink
                   size={16}

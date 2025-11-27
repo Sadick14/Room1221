@@ -20,6 +20,7 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { BotIcon } from "./icons/bot-icon";
+import { TelegramIcon } from "./icons/telegram-icon";
 
 export default function FloatingChatbot() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -164,7 +165,7 @@ export default function FloatingChatbot() {
                   >
                     <div className="flex items-center space-x-4">
                        <div className="w-10 h-10 bg-[#0088cc]/10 rounded-lg flex items-center justify-center">
-                        <MessageCircle size={20} className="text-[#0088cc]" />
+                        <TelegramIcon className="w-5 h-5 text-[#0088cc]" />
                       </div>
                       <div className="text-left">
                         <h4 className="font-inter font-semibold text-sm text-[#111111] dark:text-white">
