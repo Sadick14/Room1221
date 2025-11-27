@@ -6,8 +6,29 @@ import Image from "next/image";
 export default function Hero() {
 
   return (
-    <section id="home" className="w-full bg-white dark:bg-[#121212] py-16 md:py-20 lg:py-24">
-      <div className="max-w-[1240px] mx-auto px-6 md:px-8 lg:px-12">
+    <section id="home" className="relative w-full bg-white dark:bg-[#121212] py-16 md:py-20 lg:py-24 overflow-hidden">
+      <Image 
+        src="/5855218229494615033.jpg"
+        alt="Floating decorative image 1"
+        width={300}
+        height={300}
+        className="absolute top-10 -left-20 opacity-50 mix-blend-multiply"
+      />
+      <Image 
+        src="/5855218229494615034.jpg"
+        alt="Floating decorative image 2"
+        width={300}
+        height={300}
+        className="absolute top-1/2 -translate-y-1/2 -right-20 opacity-50 mix-blend-multiply"
+      />
+       <Image 
+        src="/5855218229494615035.jpg"
+        alt="Floating decorative image 3"
+        width={200}
+        height={200}
+        className="absolute bottom-10 left-1/4 opacity-50 mix-blend-multiply"
+      />
+      <div className="max-w-[1240px] mx-auto px-6 md:px-8 lg:px-12 relative z-10">
         {/* Hero Content - Stacked and Centered */}
         <div className="text-center space-y-8">
           {/* Room 1221 Logo/Brand */}
