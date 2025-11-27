@@ -1,6 +1,7 @@
 "use client"
 import { Shield } from "lucide-react";
 import { BotIcon } from "./icons/bot-icon";
+import Image from "next/image";
 
 export default function Hero() {
 
@@ -83,97 +84,15 @@ export default function Hero() {
         </div>
 
         {/* Hero Visual */}
-        <div className="mt-16 relative">
-          {/* Main Chat Interface Mockup */}
-          <div className="relative bg-white dark:bg-[#1E1E1E] rounded-xl border border-[#E5E7EB] dark:border-gray-700 shadow-[0_8px_16px_0_rgba(16,24,40,0.08)] dark:shadow-[0_8px_16px_0_rgba(0,0,0,0.3)] overflow-hidden max-w-4xl mx-auto">
-            {/* Chat Header */}
-            <div className="flex items-center px-6 py-4 bg-[#6366FF] dark:bg-[#8B5CF6] text-white">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                  <BotIcon className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-inter font-semibold text-lg">
-                    Room 1221
-                  </h3>
-                  <p className="font-inter text-sm text-white/80">
-                    Your confidential health assistant
-                  </p>
-                </div>
-              </div>
-              <div className="ml-auto flex items-center space-x-2">
-                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                <span className="font-inter text-sm">Online</span>
-              </div>
-            </div>
-
-            {/* Chat Messages */}
-            <div className="p-6 space-y-4 bg-gray-50 dark:bg-[#1A1A1A] min-h-[300px]">
-              {/* Bot Welcome Message */}
-              <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-[#6366FF] dark:bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0">
-                  <BotIcon className="w-5 h-5 text-white" />
-                </div>
-                <div className="bg-white dark:bg-[#2A2A2A] rounded-xl px-4 py-3 max-w-[80%] shadow-sm">
-                  <p className="font-inter text-[#111111] dark:text-white">
-                    Welcome to Room 1221! 👋 I'm here to provide confidential,
-                    judgment-free sexual and reproductive health information.
-                    You can call me whatever makes you comfortable - Kofi, Ama,
-                    Doc, or anything else!
-                  </p>
-                  <p className="font-inter text-sm text-[#6B7280] dark:text-white dark:text-opacity-70 mt-2">
-                    How can I help you today?
-                  </p>
-                </div>
-              </div>
-
-              {/* User Message */}
-              <div className="flex items-start space-x-3 justify-end">
-                <div className="bg-[#6366FF] dark:bg-[#8B5CF6] rounded-xl px-4 py-3 max-w-[80%] text-white">
-                  <p className="font-inter">
-                    Hi! I have questions about family planning options. Can you
-                    help?
-                  </p>
-                </div>
-                <div className="w-8 h-8 bg-gray-300 dark:bg-gray-600 rounded-full flex-shrink-0"></div>
-              </div>
-
-              {/* Bot Response */}
-              <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-[#6366FF] dark:bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0">
-                  <BotIcon className="w-5 h-5 text-white" />
-                </div>
-                <div className="bg-white dark:bg-[#2A2A2A] rounded-xl px-4 py-3 max-w-[80%] shadow-sm">
-                  <p className="font-inter text-[#111111] dark:text-white">
-                    Absolutely! I can provide information about various family
-                    planning methods, their effectiveness, and help you find
-                    youth-friendly clinics near you. What specific aspects would
-                    you like to know about?
-                  </p>
-                </div>
-              </div>
-
-              {/* Typing indicator */}
-              <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-[#6366FF] dark:bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0">
-                  <BotIcon className="w-5 h-5 text-white" />
-                </div>
-                <div className="bg-white dark:bg-[#2A2A2A] rounded-xl px-4 py-3 shadow-sm">
-                  <div className="flex space-x-1">
-                    <div className="w-2 h-2 bg-[#6B7280] rounded-full animate-bounce"></div>
-                    <div
-                      className="w-2 h-2 bg-[#6B7280] rounded-full animate-bounce"
-                      style={{ animationDelay: "0.1s" }}
-                    ></div>
-                    <div
-                      className="w-2 h-2 bg-[#6B7280] rounded-full animate-bounce"
-                      style={{ animationDelay: "0.2s" }}
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="mt-16 relative flex justify-center">
+            <Image 
+                src="https://picsum.photos/seed/robot/1024/768" 
+                alt="SRH Chatbot Mascot" 
+                width={800} 
+                height={600}
+                className="rounded-xl"
+                data-ai-hint="robot mascot"
+            />
         </div>
       </div>
     </section>
