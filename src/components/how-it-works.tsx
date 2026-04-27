@@ -202,7 +202,7 @@ export default function HowItWorks() {
               support.
             </p>
             <a
-              href="https://blurb-civil-63223200.figma.site/"
+              href="https://code4-care-frt-eta.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-white text-[#6366FF] font-inter font-semibold text-lg px-8 py-4 rounded-[20px] hover:bg-gray-100 active:bg-gray-200 active:scale-95 transition-all duration-200 shadow-lg"
