@@ -48,7 +48,7 @@ export default function Hero() {
           {/* Primary CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a
-              href="https://blurb-civil-63223200.figma.site/"
+              href="https://code4-care-frt-eta.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-lg px-8 py-4 rounded-[20px] hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:bg-[#4F46E5] dark:active:bg-[#6D28D9] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60 min-h-[56px] shadow-lg"
