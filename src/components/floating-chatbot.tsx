@@ -117,7 +117,7 @@ export default function FloatingChatbot() {
               {!showMoreOptions ? (
                 <div className="space-y-4 text-center">
                   <a
-                    href="https://blurb-civil-63223200.figma.site/"
+                    href="https://code4-care-frt-eta.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center space-x-2 bg-[#6366FF] dark:bg-[#8B5CF6] text-white font-inter font-semibold text-lg px-6 py-4 rounded-xl hover:bg-[#5856FF] dark:hover:bg-[#7C3AED] active:scale-95 transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#6366FF] dark:focus:ring-[#8B5CF6] focus:ring-opacity-60 shadow-lg"
